@@ -163,7 +163,7 @@ export default function HeroSection() {
       </motion.div>
 
       {/* WhatsApp Button */}
-      <div className="hidden md:block fixed bottom-6 right-6 z-50">
+      <div className=" fixed bottom-6 right-6 z-50">
         <a
           href="https://wa.me/919175866586"
           target="_blank"
