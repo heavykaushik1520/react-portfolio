@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glowing-text {
+  color: #fff;
+  text-shadow: 0 0 2px #6abdf5, 0 0 4px #6abdf5, 0 0 8px #6abdf5;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 2px #6abdf5, 0 0 4px #6abdf5, 0 0 8px #6abdf5;
+  }
+  100% {
+    text-shadow: 0 0 4px #6abdf5, 0 0 8px #6abdf5, 0 0 12px #6abdf5;
+  }
+}
+
+@keyframes border-glow {
+  0% {
+    box-shadow: 0 0 10px #6abdf5, 0 0 20px #6abdf5;
+  }
+  50% {
+    box-shadow: 0 0 20px #f56abb, 0 0 30px #f56abb;
+  }
+  100% {
+    box-shadow: 0 0 10px #6abdf5, 0 0 20px #6abdf5;
+  }
+}
+
+.animate-border-glow {
+  animation: border-glow 2s infinite;
+}
+
+/* Bubble Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.9);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  background: rgba(106, 189, 245, 0.3);
+  border-radius: 50%;
+  animation: float 10s infinite ease-in-out;
+  opacity: 0;
+}
+
+
+
+
+
+  
